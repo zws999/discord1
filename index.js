@@ -25,7 +25,6 @@ import setAvatar from "./avatar.js";
 // ===================== TOKEN =====================
 // Store your token in the DISCORD_TOKEN environment variable.
 // Never hard-code tokens in source files.
-client.login(process.env.DISCORD_TOKEN)
 
 // ===================== CLIENT =====================
 const client = new Client({
@@ -3167,4 +3166,5 @@ process.on("uncaughtException", (e) => {
 });
 
 // ===================== LOGIN =====================
+client.login(process.env.DISCORD_TOKEN);
 client.login(TOKEN);
